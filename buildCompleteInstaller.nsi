@@ -1,7 +1,7 @@
 
 ; HM NIS Edit Wizard helper defines
 !define PRODUCT_NAME "PsychoPy2"
-!define PRODUCT_VERSION "1.85.1"
+!define PRODUCT_VERSION "1.85.2"
 !define PRODUCT_PUBLISHER "Jon Peirce"
 !define PRODUCT_WEB_SITE "http://www.psychopy.org"
 ;!define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\AppMainExe.exe"
@@ -85,7 +85,7 @@ Section "PsychoPy" SEC01
   SetOverwrite on
   ;AppDir is the path to the psychopy app folder
   Var /GLOBAL AppDir
-  StrCpy $AppDir "$INSTDIR\Lib\site-packages\PsychoPy-${PRODUCT_VERSION}-py2.7.egg\psychopy\app"
+  StrCpy $AppDir "$INSTDIR\Lib\site-packages\psychopy\app"
 
   File /r /x *.pyo /x *.chm /x Editra /x doc "C:\python27\*.*"
 ; avbin to system32
